@@ -10,11 +10,11 @@ export default defineComponent({
       }
 
       function getTemperatureStr(str){
-          return (Math.floor(str) - 273.15).toFixed(1);
+          return (str - 273.15).toFixed(1);
       }
 
       function getPressureStr(str){
-          return (Math.floor(str) * 0.75).toFixed(0);
+          return (str * 0.75).toFixed(0);
       }
 
       function isNight(sunrise, sunset, dt){
